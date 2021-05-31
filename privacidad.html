@@ -5,18 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+
     <title>Aviso de Privacidad</title>
 </head>
 <body>
-    
     <header>
-        <div class="logo"><img src="./img/logo_transparent_background.png" alt="mandrax logo" width="200px"></div>
-        <div class="menu"><a href="index.html">Home</a></div>
-        <div class="menu"><a href="about.html">About us</a></div>
-        <div class="menu"><a href="contact.html">Contact us</a></div>
-        <div class="menu"><a href="gallery.html">Gallery</a></div>
-        <div class="menu"><a href="projects.html">Projects</a></div>
-        <div class="menu"><a href="publications.html">Publications</a></div>
+        <img class="logo" src="./img/logo_transparent_background.png" alt="mandrax logo">
+        
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="publications.html">Publications</a></li>
+        </ul>
+
+        <label id="icon"><i class="fas fa-bars"></i></label>
     </header>
 
     <h1>Aviso de Privacidad</h1>
@@ -91,8 +105,9 @@
     </p>
 
     <footer>
-
-        <a href="privacidad.html">Aviso de privacidad</a>
+        <div class="footer">@Copyright 2021</div>
+        <div class="footer">Mandrax S. de R.L.</div>
+        <div class="footer"><a href="privacidad.html">Aviso de privacidad</a></div>        
     </footer>
 
 </body>
